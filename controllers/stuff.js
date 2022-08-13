@@ -15,6 +15,8 @@ exports.createThing = (req, res, next) => {
     .catch(error => { res.status(400).json({ error }) })
 };
 
+
+
 exports.getOneThing = (req, res, next) => {
   Thing.findOne({
     _id: req.params.id
